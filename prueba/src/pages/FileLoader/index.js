@@ -1,4 +1,5 @@
 import React, { useState} from "react";
+import { Spinner } from "../../components/Spinner";
 import "./styles.css";
 
 const FileLoader = () => {
@@ -8,7 +9,10 @@ const FileLoader = () => {
   const handleChangeFile = (event) => {
     setLoading(true)
     setFiles([...files, ...event.target.files]);
-    setLoading(false)
+    //Por consecuente que los archivos se suben muy rápido y no se aprecia la animación 
+    //he añadido un temporizador para que pueda apreciarse.
+    setTimeout(()=>{setLoading(false)}, 2000)
+
   };
 
 
@@ -20,7 +24,7 @@ const FileLoader = () => {
           <h5>Click aquí para seleccionar el archivo</h5>
           <input type="file" value="" multiple onChange={handleChangeFile} />
         </div>
-        {loading? (<p>CARGANDO</p>):null}
+        {loading? <Spinner/>:null}
           {
             files.length > 0 ? ( 
             <div className="FilesList"> 
