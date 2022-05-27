@@ -1,7 +1,7 @@
 
 # MicroStock Growth - Prueba
 
-Esto es una prueba técnica de MicroStock Growth en la que se requieren los siguientes procesos:
+  Esto es una prueba técnica de MicroStock Growth en la que se requieren los siguientes procesos:
 
 Prueba
 
@@ -61,9 +61,23 @@ Clonar el repositorio
 ```bash
   npm run start
 ```
+**Paso 6**
+Abrir una terminal nueva y escribir los siguientes comandos:
+```bash
+  cd MicroStock-Growth
+```
+**Paso 7**
+```bash
+  node prueba/src/API/prueba.js
+```
 
 
+Una vez se haya abierto el navegador en el puerto3000 se abrirá la aplicación en su pantalla de inicio.
 
+A modo extra se ha llevado acabo la creación de una API en donde a través de Postman se puede comprobar las siguientes llamadas:
+Para el end point "local3000/user": 
+Podremos tanto crear como obtener los usuarios registrados y sus contraseñas.
+Para 
 
 ## Requerimientos
 Node.js
