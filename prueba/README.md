@@ -51,7 +51,7 @@ Clonar el repositorio
 ```
 **Paso 3**
 ```bash
-  cd Prueba
+  cd prueba
 ```
 **Paso 4**
 ```bash
